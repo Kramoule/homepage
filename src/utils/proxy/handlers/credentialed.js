@@ -64,7 +64,7 @@ export default async function credentialedProxyHandler(req, res, map) {
         headers.Authorization = `PBSAPIToken=${widget.username}:${widget.password}`;
       } else if (widget.type === "autobrr") {
         headers["X-API-Token"] = `${widget.key}`;
-      } else if (widget.type === "tubearchivist") {
+      } else if (["tubearchivist", "bookstack"].includes(widget.type)) {
         headers.Authorization = `Token ${widget.key}`;
       } else if (widget.type === "miniflux") {
         headers["X-Auth-Token"] = `${widget.key}`;

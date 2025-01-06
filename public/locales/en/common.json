@@ -1010,5 +1010,10 @@
         "issues": "Issues",
         "merges": "Merge Requests",
         "projects": "Projects"
+    },
+    "bookstack": {
+        "shelves": "Shelves",
+        "books": "Books",
+        "pages": "Pages"
     }
 }
